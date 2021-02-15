@@ -17,6 +17,14 @@
     margin: 0;
     font-weight: normal
   }
+
+  #signUpModalLabel {
+    color:grey;
+  }
+
+  #signInModalLabel {
+    color:grey;    
+  }
   
   .btnHolder button {
     background-color: blue;

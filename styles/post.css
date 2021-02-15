@@ -50,43 +50,47 @@
   
 .likeSec .likeCount {
     margin-top: 0.5%;
-    font-family: "Source Serif Pro", serif;
+    font-family: "Times New Roman",Times, serif;
     font-weight: bold;
     font-size: 0.8rem;
 }
   
-  #txt-comment {
+#txt-comment {
     width: 70%;
     min-height: 10%;
-  }
+}
   
-  #postComment button {
+#postComment button {
     margin-top: 1%;
     width: 8%;
-  }
+}
   
-  .viewComment {
+.viewComment {
     width: 70%;
     margin-top: 1%;
     font-weight: bold;
-  }
+}
   
-  .viewComment .comments {
+.viewComment .comments {
     font-family: "Times New Roman", Times, serif;
     font-weight: normal;
     font-weight: 0.8rem;
     background-color: lightgrey;
     padding: 1rem 0.7rem;
     display: none;
-  }
+}
   
-  .viewComment .comments div {
+.viewComment .comments div {
     background-color: white;
     padding: 0.5rem;
     margin-top: 0.7rem;
     margin-bottom: 0.7rem;
-  }
+}
   
-  .editEnabled {
+.editEnabled {
     border: 1px solid #f79db2;
-  }
+}
+
+.btn-ed {
+  color: white;
+}

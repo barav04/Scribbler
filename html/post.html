@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <!-- BootStrap Dependency -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/post.css">
+</head>
+
+<body>
+    <!-- Main Section Start -->
+    <div>
+        <!-- Header Section -->
+        <div class="header">
+            <!-- Logo Start -->
+            <div class="logo">
+                <h1 class="logoText">ScriBBler</h1>
+                <h6 class="subHeading">Explore, Imagine, Create</h6>
+            </div>
+            <!-- Logo end-->
+            <!-- Header Buttons Start -->
+            <div class="btnHolder">
+                <button type="button" data-toggle="modal" data-target="#signUpModal" id="btn-signUp">Sign Up</button>
+                <button type="button" data-toggle="modal" data-target="#signInModal" id="btn-signIn">Sign In</button>
+            </div>
+            <!-- Header Buttons end-->
+            <!-- Sign Up Modal Start -->
+            <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="signUpModalLabel">Get Started</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Signup Form Start -->
+                            <form>
+                                <div class="form-group">
+                                    <label for="txt-name">Name</label>
+                                    <input type="text" class="form-control bg-light" id="txt-name"
+                                        aria-describedby="name" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="txt-username-signup">Username</label>
+                                    <input type="text" class="form-control bg-light" id="txt-username-signup"
+                                        aria-describedby="signupusername" placeholder="Enter your username" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd-password-signup">Password</label>
+                                    <input type="password" class="form-control bg-light" id="pwd-password-signup"
+                                        aria-describedby="signuppassword" placeholder="Enter your password" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd-confPassword">Confirm Password</label>
+                                    <input type="password" class="form-control bg-light" id="pwd-confPassword"
+                                        aria-describedby="confirmpassword" placeholder="Re-enter your password"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success btn-block custButtons">Sign Up</button>
+                                </div>
+                            </form>
+                            <!-- Signup Form end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sign Up Modal End -->
+
+            <!-- Sign In Modal Start -->
+            <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="signInModalLabel">Welcome Back!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Signin Form Start -->
+                            <form>
+                                <div class="form-group">
+                                    <label for="txt-username-signin" class="form-label">Username</label>
+                                    <input type="text" class="form-control bg-light" id="txt-username-signin"
+                                        aria-describedby="signinusername" placeholder="Enter your username" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd-password-signin">Password</label>
+                                    <input type="password" class="form-control bg-light" id="pwd-password-signin"
+                                        aria-describedby="signinpassword" placeholder="Enter your password" required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success btn-block custButtons">Sign In</button>
+                                </div>
+                                <div class="modalFooter">
+                                    <p>Not a member? <a data-dismiss="modal" data-toggle="modal"
+                                            data-target="#signUpModal" href="#signUpModal"> Sign Up</a></p>
+                                </div>
+                            </form>
+                            <!-- Signin Form end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sign In Modal End -->
+        </div>
+        <!-- Header section Ends -->
+        <!-- Page Body section -->
+        <div class="pageBody">
+            <!-- Title of the page -->
+            <div id="title">
+                <p class="editable">Swarathma is a Bangalore (India)-based Indian Folk/fusion band. </p>
+            </div>
+            <!-- Title of the page ends -->
+            <!-- Author and Button Groups -->
+            <div class="separator">
+                <div id="author">
+                    <p class="editable">Srishti Gupta</p>
+                </div>
+                <div class="editBtn">
+                    <button type="button" class="btn btn-ed" id="btn-edit">Edit <i class="fas fa-edit"></i></button>
+                </div>
+            </div>
+            <!-- Author and Button Groups ends-->
+            <!-- Post Contents -->
+            <div id="contents">
+                <p class="editable">Swarathma (Kannada:ಸ್ವರಾತ್ಮ) is a Bangalore (India)-based Indian Folk/fusion band. 
+                    The current line-up features Vasu Dixit (vocals and rhythm guitar), K J Pavan (percussion and vocals), 
+                    Varun Murali (guitar and vocals), Sanjeev Nayak (violin and vocals), Jishnu Dasgupta (bass guitar and vocals) 
+                    and Joel Milan Baptist (drums). The band's sound draws from Indian Folk and Classical Music, blending it with Western 
+                    sounds like Blues Rock and Reggae. Their lyrics are inspired by personal journeys as well as social and political themes. 
+                    Swarathma has released two full-length studio albums, the self-titled Swarathma (2009) and Topiwalleh (2012) as well as 
+                    several singles and music videos. They were featured on the cover of Rolling Stone magazine's India edition as well on 
+                    their list of 25 Hottest Indian Bands.[1][2] They swept the annual Jack Daniels Indian Rock Awards 2009, winning Band, 
+                    Song and Album of the Year.[3] They have toured Morocco, the United Kingdom, Hong Kong, Australia and Singapore and are one of 
+                    India's biggest folk rock bands.Swarathma was formed in 2002 in Mysore when vocalist and songwriter Vasu Dixit met 
+                    Abhinanth Kumar on guitars with the objective of creating original music. Joined by K J Pavan on percussions and 
+                    Arjun on the violin, they were the original line-up. Dixit left in 2003 to pursue a Masters in Film and Video Communication 
+                    from the National Institute of Design, Ahmedabad, leading to the band taking a two-year break, but regrouped in 2006 with Montry Manuel 
+                    on drums.[7]. Vasu Dixit is the lead singer of Swarathma performing in a concert at New Delhi
+                    The first break for Swarathma came when they won Radio City Live 2006, an SMS based contest for Bangalore's best band, 
+                    conducted by the FM radio station Radio City on 30 September 2006.[8] The fresh original sound of the band won them the 
+                    contest coupled with the fact that they played a song "Ee Bhoomi" (This Earth) in Kannada. The show ended with a jam session 
+                    with leading Indian rock band Parikrama. Swarathma continued to play shows in and around Bangalore, gaining popularity and 
+                    building a fan-base, while searching for a record label who would release the band's music. Owing to other professional commitments,
+                    Abhinanth, Arjun and guitar-player Dheeraj Joseph could not continue full-time with the band. Over the year 2007, they were joined by 
+                    Sanjeev Nayak on the Violin, Varun on lead guitar and Jishnu Dasgupta[9] on bass guitar who earlier played with the band bodhiTree, 
+                    from XLRI Jamshedpur.[10] The varying musical backgrounds of the members caused the music to evolve. The new line-up played at various 
+                    venues including the prestigious Mysore Yuva Dasara Habba,[11] the celebrations of the Indian festival Dasara in November 2007. Sharing the stage 
+                    with other noted artistes like Usha Uthup, and Sunidhi Chauhan[12] the band was lauded for the strength of the compositions and on-stage energy.
+                </p>
+            </div>
+            <!-- Post Contents ends -->
+            <!-- Like Section -->
+            <div class="likeSec">
+                <button type="button" class="btn btn-ed" id="btn-like"><i class="fas fa-thumbs-up"></i>
+                    Like</button>
+                <p class="likeCount">Be the first one to like this!</p>
+            </div>
+            <!-- Like Section ends-->
+            <!-- Post comment section -->
+            <div id="postComment">
+                <textarea name="comment" id="txt-comment" rows="4" value="" placeholder="Leave a comment..."></textarea>
+                <br>
+                <button type="button" class="btn btn-ed" id="btn-comment">Comment</button>
+            </div>
+            <!-- Post comment section ends -->
+            <!-- View comment section -->
+            <div class="viewComment">
+                <p>All Comments</p>
+                <div class="comments">
+                    <!-- Dynamically Add the comments using <div></div> -->
+                </div>
+            </div>
+            <!-- View comment section ends -->
+        </div>
+        <!-- Page Body Section ends -->
+    </div>
+    <!-- Parent container ends -->
+    <!-- BootStrap Dependency -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/post.js"></script>
+</body>
+
+</html>
